@@ -1,8 +1,23 @@
 body {
+    display: flex; 
+    flex-direction: column;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+}
+
+header { 
+    position: fixed; 
+    top: 0; 
+    width: 110%; 
+    z-index: 1000; 
+}
+
+footer { position: fixed; 
+    bottom: 0; 
+    width: 100%;
 }
 
 .container {
@@ -11,7 +26,9 @@ body {
     background: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
 }
 
 h1, h2 {
@@ -32,9 +49,9 @@ input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="file"] {
-    padding: 10px;
+    padding: 20px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     border-radius: 5px;
 }
 
@@ -47,6 +64,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin: 3px;
+    border: 10px;
 }
 
 button:hover {
@@ -73,4 +91,25 @@ button:hover {
 .user-card p {
     margin: 5px 0;
     color: #666;
+}
+.logo-site {
+    height: 20px;
+}
+
+.user-image {
+    height: 12px;
+}
+.logo-site {
+    height: 20px;
+}
+
+.logo-footer {
+    height: 20px;
+}
+
+.user-image {
+    height: 100px;
+}
+.footer {
+
 }
