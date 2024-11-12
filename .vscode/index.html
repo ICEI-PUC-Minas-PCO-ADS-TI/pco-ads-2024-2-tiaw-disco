@@ -27,6 +27,33 @@
             </div>
         </nav>
     </header>
+    <div class="container">
+        <h1>Cadastro de Usuário</h1>
+        <form id="userForm" class="d-flex flex-column">
+            <label for="name">Nome do Usuário:</label>
+            <input type="text" id="name" name="name" required style="width: 100%;">
+
+            <label for="email">Email do Usuário:</label>
+            <input type="email" id="email" name="email" required style="width: 100%;">
+
+            <label for="image">Imagem do Usuário:</label>
+            <input type="file" id="image" name="image" accept="image/*" style="width: 100%;">
+
+            <label for="ranking">Ranking:</label>
+            <input type="number" id="ranking" name="ranking" required style="width: 100%;">
+
+            <label for="socialMedia">Redes Sociais:</label>
+            <input type="text" id="socialMedia" name="socialMedia" style="width: 100%;">
+
+            <label for="categories">Quantidades de Discos por Categoria:</label>
+            <input type="text" id="categories" name="categories" style="width: 100%;">
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        <h2>Usuários Cadastrados</h2>
+        <div id="userList"></div>
+    </div>
+    
     <aside>
 
     </aside>
@@ -60,8 +87,9 @@
         </div>
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

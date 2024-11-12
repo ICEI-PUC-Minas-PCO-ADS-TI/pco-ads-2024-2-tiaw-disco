@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página 1</title>
+</head>
+<body>
+    <input type="text" id="dataInput" placeholder="Digite algo">
+    <button onclick="sendData()">Enviar</button>
+    <script>
+        function sendData() {
+            const data = document.getElementById('dataInput').value;
+            window.location.href = `page2.html?data=${encodeURIComponent(data)}`;
+        }
+    </script>
+</body>
+</html>

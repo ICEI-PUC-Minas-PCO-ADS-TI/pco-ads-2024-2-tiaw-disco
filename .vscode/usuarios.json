@@ -1,0 +1,8 @@
+{
+    "name": "João Silva",
+    "email": "joao.silva@example.com",
+    "image": "img\fabiana.png",
+    "ranking": 5,
+    "socialMedia": "https://twitter.com/joaosilva",
+    "categories": ["Rock", "Jazz", "Blues"]
+}
