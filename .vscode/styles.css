@@ -55,16 +55,16 @@ input[type="file"] {
     border-radius: 5px;
 }
 
-button {
-    margin-top: 20px;
-    padding: 20px;
-    background: #333;
+.cadastrar-btn {
+    padding: 5px 10px;
+    background: #000;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 3px;
-    border: 10px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin: 20px auto;
+    display: block; 
+    
 }
 
 button:hover {
