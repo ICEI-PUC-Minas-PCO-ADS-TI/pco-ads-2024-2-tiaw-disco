@@ -1,0 +1,111 @@
+@import url('https://fonts.cdnfonts.com/css/lulo-clean');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: solid;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+img#capa {
+    padding: 10px 20% 10px 33%;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card button {
+    margin-top: 10px;
+}
+
+#botao_Verde{
+    background-color: #267A80;
+}
+
+#botao_Rosa{
+    background-color: #7F1F5B;
+    margin-top: 10px;
+}
+
+#botao_Dourado{
+    background-color: #A4967A;
+}
+
+.img_Album{
+    border-color: black;
+    border-style:solid;
+}
+
+@media (max-width: 660px) {
+    body{
+        margin-top: 200px;
+    }
+}

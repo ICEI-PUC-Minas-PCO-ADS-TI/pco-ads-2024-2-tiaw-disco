@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Disco de Vinil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Editar Disco de Vinil</h1>
+    <form id="form-editar">
+        <input type="hidden" id="indice" name="indice">
+        
+        <label for="capa">Capa do Álbum:</label>
+        <img id="capa" alt="Capa do Álbum" width="100"><br>
+
+        <label for="nome">Nome do Álbum:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="artista">Nome do Artista:</label>
+        <input type="text" id="artista" name="artista" required><br>
+
+        <label for="genero">Gênero do Álbum:</label>
+        <input type="text" id="genero" name="genero" required><br>
+
+        <label for="ano">Ano de Lançamento:</label>
+        <input type="number" id="ano" name="ano" required><br>
+
+        <button type="submit" id="botao_Verde">Salvar</button>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const discoEditando = localStorage.getItem('discoEditando');
+            if (discoEditando !== null) {
+                const disco = JSON.parse(localStorage.getItem('discoDados'));
+                document.getElementById('indice').value = discoEditando;
+                document.getElementById('capa').src = disco.capa;
+                document.getElementById('nome').value = disco.nome;
+                document.getElementById('artista').value = disco.artista;
+                document.getElementById('genero').value = disco.genero;
+                document.getElementById('ano').value = disco.ano;
+                localStorage.removeItem('discoEditando');
+                localStorage.removeItem('discoDados');
+            }
+        });
+
+        document.getElementById('form-editar').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const indice = document.getElementById('indice').value;
+            const nome = document.getElementById('nome').value;
+            const artista = document.getElementById('artista').value;
+            const genero = document.getElementById('genero').value;
+            const ano = document.getElementById('ano').value;
+
+            const discos = JSON.parse(localStorage.getItem('discos')) || [];
+            discos[indice] = { ...discos[indice], nome, artista, genero, ano };
+            localStorage.setItem('discos', JSON.stringify(discos));
+            window.location.href = 'exibicao.html';
+        });
+    </script>
+</body>
+</html>
