@@ -7,6 +7,9 @@ html, body {
     display: flex;
     flex-direction: column;
 }
+.logosite {
+    width: 100%;
+}
 
 body {
     flex: 1; 
@@ -197,3 +200,12 @@ header nav {
 
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nome {
+    text-align: left;
+    width: 100%;
+}
