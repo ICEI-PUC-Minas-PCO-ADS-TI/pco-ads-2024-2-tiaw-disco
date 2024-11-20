@@ -39,7 +39,7 @@ footer {
     width: 100vw;
     height: 23%;
     bottom: 0;
-    background-color: #000;  
+    background-color: black;  
     z-index: 1000; 
     margin-top: 30px;
     margin-bottom: 10;
