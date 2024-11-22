@@ -1,89 +1,93 @@
-document.getElementById('userForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+// Evento DOMContentLoaded
+// Aguarda o carregamento completo do HTML para iniciar a execução do script, garantindo que todos os elementos DOM estejam disponíveis.
 
-    const user = {
-        id: Date.now(),
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        image: document.getElementById('image').files[0] ? URL.createObjectURL(document.getElementById('image').files[0]) : '',
-        ranking: document.getElementById('ranking').value,
-        socialMedia: document.getElementById('socialMedia').value,
-        categories: document.getElementById('categories').value.split(',')
-    };
+document.addEventListener('DOMContentLoaded', function () {
 
-    let users = JSON.parse(localStorage.getItem('users')) || [];
-    users.push(user);
-    localStorage.setItem('users', JSON.stringify(users));
+//  Seleciona os elementos do DOM onde as informações do perfil serão exibidas.   
+    const profileName = document.querySelector('.nome');
+    const profileEmail = document.querySelector('.email');
+    const profileInstagram = document.querySelector('.redes a[href^="https://www.instagram.com"]');
+    const profileFacebook = document.querySelector('.redes a[href^="https://www.facebook.com"]');
+    const profileImage = document.querySelector('.user-img img');
 
-    displayUsers();
-    document.getElementById('userForm').reset();
+
+//  Carrega dados do localStorage e atualiza os elementos do perfil com essas informações, se disponíveis.   
+    function loadProfile() {
+        const storedName = localStorage.getItem('profileName');
+        const storedEmail = localStorage.getItem('profileEmail');
+        const storedInstagram = localStorage.getItem('profileInstagram');
+        const storedFacebook = localStorage.getItem('profileFacebook');
+        const storedImage = localStorage.getItem('profileImage');
+
+        if (storedName) profileName.textContent = storedName;
+        if (storedEmail) profileEmail.textContent = storedEmail;
+        if (storedInstagram) {
+            profileInstagram.href = `https://www.instagram.com/${storedInstagram.replace('@', '')}`;
+            profileInstagram.textContent = storedInstagram;
+        }
+        if (storedFacebook) {
+            profileFacebook.href = `https://www.facebook.com/${storedFacebook.replace('@', '')}`;
+            profileFacebook.textContent = storedFacebook;
+        }
+        if (storedImage) profileImage.src = storedImage;
+    }
+// Atualiza os elementos do perfil com novos valores inseridos pelo usuário e salva essas informações no localStorage.
+
+    window.saveProfile = function () {
+        const newName = document.getElementById('profileName').value;
+        const newEmail = document.getElementById('profileEmail').value;
+        const newInstagram = document.getElementById('profileInstagram').value;
+        const newFacebook = document.getElementById('profileFacebook').value;
+        const newImage = document.getElementById('profileImage').files[0];
+
+        profileName.textContent = newName;
+        profileEmail.textContent = newEmail;
+
+        if (newInstagram) {
+            profileInstagram.href = `https://www.instagram.com/${newInstagram.replace('@', '')}`;
+            profileInstagram.textContent = newInstagram;
+        }
+
+        if (newFacebook) {
+            profileFacebook.href = `https://www.facebook.com/${newFacebook.replace('@', '')}`;
+            profileFacebook.textContent = newFacebook;
+        }
+
+        localStorage.setItem('profileName', newName);
+        localStorage.setItem('profileEmail', newEmail);
+        localStorage.setItem('profileInstagram', newInstagram);
+        localStorage.setItem('profileFacebook', newFacebook);
+
+        if (newImage) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                profileImage.src = e.target.result;
+                localStorage.setItem('profileImage', e.target.result);
+            }
+            reader.readAsDataURL(newImage);
+        }
+
+       
+        const modal = bootstrap.Modal.getInstance(document.getElementById('editProfileModal'));
+        modal.hide();
+    }
+// Remove todas as informações do localStorage e limpa os elementos do perfil no DOM, após confirmação do usuário.
+    window.deleteAccount = function () {
+        if (confirm('Você tem certeza que deseja excluir sua conta? Isso irá remover todas as suas informações armazenadas.')) {
+            localStorage.clear();
+            profileName.textContent = '';
+            profileEmail.textContent = '';
+            profileInstagram.href = '';
+            profileInstagram.textContent = '';
+            profileFacebook.href = '';
+            profileFacebook.textContent = '';
+            profileImage.src = '';
+
+           
+            const modal = bootstrap.Modal.getInstance(document.getElementById('editProfileModal'));
+            modal.hide();
+        }
+    }
+// Chama a função loadProfile para carregar os dados do perfil quando a página é carregada.
+    loadProfile();
 });
-
-function displayUsers() {
-    const users = JSON.parse(localStorage.getItem('users')) || [];
-    const userList = document.getElementById('userList');
-    userList.innerHTML = '';
-
-    users.forEach(user => {
-        const userCard = document.createElement('div');
-        userCard.classList.add('user-card');
-
-        const userImage = document.createElement('img');
-        userImage.src = user.image;
-        userCard.appendChild(userImage);
-
-        const userName = document.createElement('h2');
-        userName.textContent = user.name;
-        userCard.appendChild(userName);
-
-        const userEmail = document.createElement('p');
-        userEmail.textContent = `Email: ${user.email}`;
-        userCard.appendChild(userEmail);
-
-        const userRanking = document.createElement('p');
-        userRanking.textContent = `Ranking: ${user.ranking}`;
-        userCard.appendChild(userRanking);
-
-        const userSocialMedia = document.createElement('p');
-        userSocialMedia.innerHTML = `Redes Sociais: <a href="${user.socialMedia}" target="_blank">${user.socialMedia}</a>`;
-        userCard.appendChild(userSocialMedia);
-
-        const userCategories = document.createElement('p');
-        userCategories.textContent = `Categorias: ${user.categories.join(', ')}`;
-        userCard.appendChild(userCategories);
-
-        const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Excluir';
-        deleteButton.onclick = () => deleteUser(user.id);
-        userCard.appendChild(deleteButton);
-
-        const editButton = document.createElement('button');
-        editButton.textContent = 'Editar';
-        editButton.onclick = () => editUser(user.id);
-        userCard.appendChild(editButton);
-
-        userList.appendChild(userCard);
-    });
-}
-
-function deleteUser(id) {
-    let users = JSON.parse(localStorage.getItem('users')) || [];
-    users = users.filter(user => user.id !== id);
-    localStorage.setItem('users', JSON.stringify(users));
-    displayUsers();
-}
-
-function editUser(id) {
-    let users = JSON.parse(localStorage.getItem('users')) || [];
-    const user = users.find(user => user.id === id);
-
-    document.getElementById('name').value = user.name;
-    document.getElementById('email').value = user.email;
-    document.getElementById('ranking').value = user.ranking;
-    document.getElementById('socialMedia').value = user.socialMedia;
-    document.getElementById('categories').value = user.categories.join(',');
-
-    deleteUser(id);
-}
-
-document.addEventListener('DOMContentLoaded', displayUsers);

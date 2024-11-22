@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8" />
@@ -9,15 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar bg-dark">
+        <nav class="navbar bg-black">
             <div class="container-fluid d-flex justify-content-between">
                 <a class="navbar-brand" href="index.html">
-                    <img class="logo-site" src="assets/img/logo discô branca.webp" height="80px" alt="logo">
+                    <img class="logosite" src="assets/img/LogoDiscoBranca.webp" height="80px" alt="logo">
                 </a>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
@@ -27,46 +28,156 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <h1>Cadastro de Usuário</h1>
-        <form id="userForm" class="d-flex flex-column">
-            <label for="name">Nome do Usuário:</label>
-            <input type="text" id="name" name="name" required style="width: 100%;">
 
-            <label for="email">Email do Usuário:</label>
-            <input type="email" id="email" name="email" required style="width: 100%;">
+    <main class="main-content">
+        <div class="container-fluid mx-2 ">
+            <div class="row">
 
-            <label for="image">Imagem do Usuário:</label>
-            <input type="file" id="image" name="image" accept="image/*" class="user-image" style="width: 100%;">
+                <div class="user-profile col-md-6">
+                    <aside class="user-img">
+                        <img src="assets/img/fabiana.webp" height=120px alt="Imagem do Usuário">
+                    </aside>
+                    <div class="user-info">
+                        <h1 class="nome">Fabiana Costa</h1>
+                        <div class="email">fabianacosta@email.com</div><br>
+                        <div class="ranking ">
+                            <img src="assets/img/DiscoDeOuro.webp" height=36px alt="Disco de Ouro">
+                            <img src="assets/img/DiscoDeOuro.webp" height=36px alt="Disco de Ouro">
+                            <img src="assets/img/DiscoDeOuro.webp" height=36px alt="Disco de Ouro">
+                            <img src="assets/img/DiscoDeOuro.webp" height=36px alt="Disco de Ouro">
+                            <img src="assets/img/DiscoDeOuro.webp" height=36px alt="Disco de Ouro">
+                            <br>
+                        </div>
 
-            <label for="ranking">Ranking:</label>
-            <input type="number" id="ranking" name="ranking" required style="width: 100%;">
+                        <p class="ms-2 mb-0">Colecionador Nível 5</p>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <div class="redes col-md-6">
+                <img src="assets/img/instagram.webp" alt="Instagram" style="width: 30px; height: 30px;">
+                <a href="https://www.instagram.com/seu_usuario" target="_blank">
+                    @fabianacosta </a>
+                <p></p>
+                <img src="assets/img/facebook.webp" alt="Facebook" style="width: 30px; height: 30px;">
+                <a href="https://www.facebook.com/seu_usuario" target="_blank">
+                    @fabianacosta </a>
+            </div>
+            <p></p>
+            <button type="buttonPerfil" class="btn btn-primary custom-btn" data-bs-toggle="modal"
+                data-bs-target="#editProfileModal"> Editar Perfil </button>
 
-            <label for="socialMedia">Redes Sociais:</label>
-            <input type="text" id="socialMedia" name="socialMedia" style="width: 100%;">
+            <button type="button" class="btn btn-danger custom-btn" onclick="deleteAccount()">Excluir Conta</button>
 
-            <label for="categories">Quantidades de Discos por Categoria:</label>
-            <input type="text" id="categories" name="categories" style="width: 100%;">
 
-            <button type="submit">Cadastrar</button>
-        </form>
-        <h2>Usuários Cadastrados</h2>
-        <div id="userList"></div>
-    </div>
-    
-    <aside>
 
-    </aside>
-    <main>
+
+        </div>
+        </div>
+
+        <div class="categorias col-md-6">
+
+
+
+            <h2 style="text-align: center;"><strong>CATEGORIAS</strong></h2><br><br>
+            <button style="background-color: #7F1F5B; cursor:pointer; border-color: #000000;"
+                onclick="window.location.href='Categorias.html';">Todas</button>
+            <button style="background-color: #000000; cursor:pointer; border-color: #ffffff;"
+                onclick="window.location.href='Categorias.html';">Rock</button>
+            <button style="background-color: #A4967A; cursor:pointer; border-color: #000000;"
+                onclick="window.location.href='Categorias.html';">Pop</button>
+            <button style="background-color: #267A80; cursor:pointer; border-color: #000000;"
+                onclick="window.location.href='Categorias.html';">Clássica</button>
+            <button style="background-color: #7F1F5B; cursor:pointer; border-color: #000000;"
+                onclick="window.location.href='Categorias.html';">Romântica</button>
+            <button style="background-color: #000000; cursor:pointer; border-color: #ffffff;"
+                onclick="window.location.href='Categorias.html';">MPB</button>
+            <button style="background-color: #A4967A; cursor:pointer; border-color: #000000;"
+                onclick="window.location.href='Categorias.html';">Jazz</button>
+            <button style="background-color: #267A80; cursor:pointer; border-color: #000000;"
+                onclick="window.location.href='Categorias.html';">Samba</button>
+            <button style="background-color: #7F1F5B; cursor:pointer; border-color: #000000;"
+                onclick="window.location.href='Categorias.html';">Blues</button>
+            <button style="background-color: #000000; cursor:pointer; border-color: #ffffff;"
+                onclick="window.location.href='Categorias.html';">Reaggae</button>
+        </div>
 
     </main>
-    <footer class="bg-dark text-white mt-5">
-        <div class="container py-2">
+
+    <div class="container-fluid mx-2 ">
+        <div class="row">
+            <div class="categorias col-md-5">
+                <a href="Colecao.html">
+                    <div class="colecao">
+                        <img src="assets\img\DiscoComCapa.webp">
+                        <p><strong> COLEÇÃO</strong></p>
+                        <p>Tenho:</p>
+                        <p>Quero:</p>
+                        <p>Troco/Vendo</p>
+                        <p>TOTAL:</p>
+                    </div>
+                </a>
+            </div>
+
+            <button class="adicionarAlbum col-md-6" onclick="location.href='AdicionarAlbum.html';">ADICIONAR
+                ÁLBUM</button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editProfileModalLabel">Editar Perfil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editProfileForm">
+                        <div class="mb-3">
+                            <label for="profileImage" class="form-label">Imagem do Perfil</label>
+                            <input type="file" class="form-control" id="profileImage">
+                        </div>
+                        <div class="mb-3">
+                            <label for="profileName" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="profileName" value="Fabiana Costa">
+                        </div>
+                        <div class="mb-3">
+                            <label for="profileEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="profileEmail" value="fabianacosta@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="profileInstagram" class="form-label">Instagram</label>
+                            <input type="text" class="form-control" id="profileInstagram" value="@fabianacosta">
+                        </div>
+                        <div class="mb-3">
+                            <label for="profileFacebook" class="form-label">Facebook</label>
+                            <input type="text" class="form-control" id="profileFacebook" value="@fabianacosta">
+                        </div>
+                    </form>
+                </div>.bg-danger-subtle
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="saveProfile()">Salvar mudanças</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <footer class="container-fluid d-flex justify-content-between bg-black text-white">
+        <div class="container py-2 ">
             <div class="row">
                 <div class="col-md-4 py-3">
                     <h5>Sobre Nós</h5>
                     <h5>Contato</h5>
-                    
+
                 </div>
                 <div class="col-md-4 py-2">
                     <h5>Siga-nos</h5>
@@ -76,22 +187,16 @@
                     <a href="https://www.facebook.com" class="btn btn-outline-light btn-sm">
                         <i class="bi bi-facebook"></i> Facebook
                     </a>
-                    
+
                 </div>
-                <div class="col-md-4 text-end">                    
+                <div class="col-md-4 text-end">
                     <div class="mt-0 py-2">
-                        <img src="assets/img/simbolo discô branco.webp" height="80px" class="logo-footer" alt="logo">
+                        <img src="assets/img/simbolo discô branco.webp" height="80px" alt="logo">
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
 
 </html>
