@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibição de Discos de Vinil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Discos de Vinil Cadastrados</h1>
+    <div id="filtros">
+        <label for="filtro-genero">Gênero do Álbum:</label>
+        <select id="filtro-genero">
+            <option value="">Todos</option>
+            <option value="Rock">Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Hip-Hop">Hip-Hop</option>
+            <option value="Classical">Classical</option>
+            <option value="Blues">Blues</option>
+            <option value="Country">Country</option>
+            <option value="Electronic">Electronic</option>
+            <option value="Reggae">Reggae</option>
+            <option value="Metal">Metal</option>
+        </select><br>
+
+        <button id="botao_Filtro" onclick="aplicarFiltros()">Aplicar Filtros</button>
+    </div>
+    <div id="lista-discos" class="card-container"></div>
+    <a id="ir_Cadastrar" href="cadastro.html"><button id="botao_Verde">Cadastrar Novo Disco</button></a>
+    <script src="script.js"></script>
+</body>
+</html>

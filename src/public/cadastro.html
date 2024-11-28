@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Disco de Vinil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cadastro de Disco de Vinil</h1>
+    <form id="form-cadastro">
+        <input type="hidden" id="indice" name="indice">
+        <label for="capa">Capa do Álbum:</label>
+        <input type="file" id="capa" name="capa" accept="image/*" required><br>
+
+        <label for="nome">Nome do Álbum:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="artista">Nome do Artista:</label>
+        <input type="text" id="artista" name="artista" required><br>
+
+        <label for="genero">Gênero do Álbum:</label>
+        <select id="genero" name="genero" required>
+            <option value="Rock">Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Hip-Hop">Hip-Hop</option>
+            <option value="Classical">Classical</option>
+            <option value="Blues">Blues</option>
+            <option value="Country">Country</option>
+            <option value="Electronic">Electronic</option>
+            <option value="Reggae">Reggae</option>
+            <option value="Metal">Metal</option>
+        </select><br>
+
+        <label for="ano">Ano de Lançamento:</label>
+        <input type="number" id="ano" name="ano" required><br>
+
+        <button type="submit" id="botao_Verde">Cadastrar</button>
+    </form>
+    <a href="exibicao.html"><button id="botao_Rosa">Voltar</button></a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const formCadastro = document.getElementById('form-cadastro');
+            formCadastro.addEventListener('submit', (event) => {
+                event.preventDefault();
+
+                const capa = document.getElementById('capa').files[0];
+                const nome = document.getElementById('nome').value;
+                const artista = document.getElementById('artista').value;
+                const genero = document.getElementById('genero').value;
+                const ano = document.getElementById('ano').value;
+
+                if (capa) {
+                    const reader = new FileReader();
+                    reader.onloadend = () => {
+                        const disco = {
+                            capa: reader.result,
+                            nome,
+                            artista,
+                            genero,
+                            ano
+                        };
+                        salvarDisco(disco);
+                        formCadastro.reset();
+                        window.location.href = 'exibicao.html';
+                    };
+                    reader.readAsDataURL(capa);
+                }
+            });
+
+            function salvarDisco(disco) {
+                const discos = JSON.parse(localStorage.getItem('discos')) || [];
+                discos.push(disco);
+                localStorage.setItem('discos', JSON.stringify(discos));
+            }
+        });
+    </script>
+</body>
+</html>

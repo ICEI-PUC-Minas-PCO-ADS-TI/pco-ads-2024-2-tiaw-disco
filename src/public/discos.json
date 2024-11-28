@@ -1,0 +1,72 @@
+[
+    {
+        "capa": "https://picsum.photos/150/150.webp?nocache=1",
+        "nome": "Álbum 1",
+        "artista": "Artista 1",
+        "genero": "Rock",
+        "ano": 1990
+    },
+    {
+        "capa": "https://picsum.photos/150/150.webp?nocache=2",
+        "nome": "Álbum 2",
+        "artista": "Artista 2",
+        "genero": "Pop",
+        "ano": 2000
+    },
+    {
+        "capa": "https://picsum.photos/150/150.webp?nocache=3",
+        "nome": "Álbum 3",
+        "artista": "Artista 3",
+        "genero": "Jazz",
+        "ano": 1980
+    },
+    {
+        "capa": "https://picsum.photos/150/150.webp?nocache=4",
+        "nome": "Álbum 4",
+        "artista": "Artista 4",
+        "genero": "Hip-Hop",
+        "ano": 1995
+    },
+    {
+        "capa": "https://picsum.photos/150/150.webp?nocache=5",
+        "nome": "Álbum 5",
+        "artista": "Artista 5",
+        "genero": "Classical",
+        "ano": 1985
+    },
+    {
+        "capa": "https://picsum.photos/150/150.webp?nocache=6",
+        "nome": "Álbum 6",
+        "artista": "Artista 6",
+        "genero": "Blues",
+        "ano": 1998
+    },
+    {
+        "capa": "https://picsum.photos/150/150.webp?nocache=7",
+        "nome": "Álbum 7",
+        "artista": "Artista 7",
+        "genero": "Country",
+        "ano": 2003
+    },
+    {
+        "capa": "https://picsum.photos/150/150.webp?nocache=8",
+        "nome": "Álbum 8",
+        "artista": "Artista 8",
+        "genero": "Electronic",
+        "ano": 1979
+    },
+    {
+        "capa": "https://picsum.photos/150/150.webp?nocache=9",
+        "nome": "Álbum 9",
+        "artista": "Artista 9",
+        "genero": "Reggae",
+        "ano": 2005
+    },
+    {
+        "capa": "https://picsum.photos/150/150.webp?nocache=10",
+        "nome": "Álbum 10",
+        "artista": "Artista 10",
+        "genero": "Metal",
+        "ano": 1992
+    }
+]
