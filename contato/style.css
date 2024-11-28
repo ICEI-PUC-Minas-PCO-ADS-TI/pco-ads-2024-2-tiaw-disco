@@ -1,0 +1,85 @@
+body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif; 
+   background-color: #A4967A;
+}
+
+.contato {
+    background-color: #7F1F5B;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.botao {
+    background-color: black; 
+    color: white; 
+    width: 100%;
+}
+
+.botao:hover {
+    background-color: rgb(22, 22, 22);
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+h1 {
+    text-align: center;
+    color: white;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    border-bottom: 1px solid #ddd;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+th {
+    font-weight: bold;
+}
+tbody tr:hover {
+    background-color: white;
+}
+
+button{
+    color: black;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+   
+}
+
+button:hover {
+    background-color: #A4967A;
+}
+
+button.apagar {
+    background-color: rgb(204, 195, 182);
+}
+
