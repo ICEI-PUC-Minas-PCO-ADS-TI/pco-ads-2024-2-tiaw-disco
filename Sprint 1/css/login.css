@@ -11,8 +11,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #7f1f5b;
+    background: #000000;
+    margin: 0;
 }
+
 
 .container {
     width: 80%;
@@ -20,23 +22,10 @@ body {
     height: 80vh;
     display: flex;
     flex-direction: row;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
     overflow: hidden;
-}
-
-.form-image {
-    width: 50%;
-    display: flex;
+    margin: auto;
     justify-content: center;
     align-items: center;
-    background-color: #267a80;
-    padding: 1rem;
-}
-
-.form-image img {
-    width: 100%;
-    max-width: 31rem;
-    height: auto;
 }
 
 .form {
@@ -45,8 +34,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #A4967A;
     padding: 3rem;
+    border-radius: 15px;
 }
 
 .form-header {
@@ -126,7 +116,7 @@ body {
 }
 
 .button button:hover {
-    background-color: #000000;
+    background-color: #7f1f5b;
 }
 
 .button button a {
@@ -183,10 +173,6 @@ body {
 
     body {
         background: #000000;
-    }
-
-    .form-image {
-        display: none;
     }
 
     .input-group {
