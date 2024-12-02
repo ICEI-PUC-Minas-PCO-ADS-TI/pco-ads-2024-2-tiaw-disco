@@ -1,9 +1,13 @@
+@import url('https://fonts.cdnfonts.com/css/tilt-warp');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lulo-clean');
+
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Tilt Warp';
 }
 
 body {
@@ -16,16 +20,30 @@ body {
     margin: 0;
 }
 
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    height: 100px;
+}
+
 .container {
     width: 80%;
     max-width: 1200px;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    overflow: auto;
     margin: auto;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .form {
@@ -35,14 +53,14 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #a4967a;
-    padding: 3rem;
+    padding: 1rem;
     border-radius: 15px;
 }
 
 .form-header {
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .login-button {
@@ -72,21 +90,22 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
+    font-size: 2em;
 }
 
 .input-box {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.1rem;
+    margin-bottom: 0.5rem;
 }
 
 .input-box input {
     margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem ;
     border: 3px solid #000000;
     border-radius: 15px;
-    
+
 }
 
 .input-box input:hover {
@@ -95,7 +114,7 @@ body {
 
 .input-box label,
 .gender-title h6 {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #000000c0;
 }
@@ -105,13 +124,17 @@ body {
 }
 
 .button button {
-    width: 100%;
-    margin-top: 2.5rem;
+    width: 60%;
+    margin-top: 1rem;
+    margin-left: 90px;
     border: none;
     background-color: #000000;
-    padding: 0.62rem;
+    padding: 0.8rem;
     border-radius: 5px;
     cursor: pointer;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
 }
 
 .button button:hover {
@@ -120,7 +143,7 @@ body {
 
 .button button a {
     text-decoration: none;
-    font-size: 0.93rem;
+    font-size: 1.3rem;
     font-weight: 500;
     color: #fff;
 }

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/cadastro.css">
-    <title>Discô</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastre-se</title>
 </head>
 
 <body>
@@ -15,19 +15,19 @@
             <form action="#">
                 <div class="form-header">
                     <div class="title">
-                            <img src="Img/LogoDiscoPreta.webp" alt="Logo DISCÔ" style="width: 150px;">
+                        <img src="assets/img/LogoDisco.webp" alt="Logo DISCÔ" style="width: 200px;">
                     </div>
-                    <div class="login-button">
-                        <button><a href="login.html">Entrar</a></button>
-                    </div>
+
                 </div>
-                
+                <div class="button">
+                    <button><a href="login.html">ENTRAR</a></button>
+                </div>
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Nome Completo</label>
                         <input id="firstname" type="text" name="firstname" placeholder="Nome Completo" required>
                     </div>
-                    
+
                     <div class="input-box">
                         <label for="email">E-mail</label>
                         <input id="email" type="email" name="email" placeholder="Seu e-mail" required>
@@ -40,13 +40,15 @@
 
                     <div class="input-box">
                         <label for="Confirmpassword">Confirme sua senha</label>
-                        <input id="Confirmpassword" type="password" name="Confirmpassword" placeholder="Confirme sua senha" required>
+                        <input id="Confirmpassword" type="password" name="Confirmpassword"
+                            placeholder="Confirme sua senha" required>
                     </div>
                 </div>
 
                 <div class="button">
                     <button type="button" onclick="cadastrar()"><a href="#">CADASTRAR</a></button>
                 </div>
+
             </form>
         </div>
     </did>
