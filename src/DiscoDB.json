@@ -1,0 +1,120 @@
+{
+    "banners": [
+        {
+            "descricao": "Transforme sua coleção em uma obra de arte",
+            "imagem": "assets/img/banner1.webp"
+        },
+        {
+            "descricao": "Vinil, a Trilha sonora da sua vida!",
+            "imagem": "assets/img/banner2.webp"
+        }
+    ],
+    "top10": [
+        {
+            "descricao": " 1º Lugar:\n Fleetwood Mac - 'Rumours'",
+            "imagem": "assets/img/FleetwoodMac.webp"
+        },
+        {
+            "descricao": "2º Lugar:\nJoy Division - 'Unknown Pleasures'",
+            "imagem": "assets/img/JoyDivision.webp"
+        },
+        {
+            "descricao": "3º Lugar: \nNirvana - 'Nevermind'",
+            "imagem": "assets/img/Nirvana.webp"
+        },
+        {
+            "descricao": "4º Lugar: \nOasis- 'What's the History Morning Glory'",
+            "imagem": "assets/img/Oasis.webp"
+        },
+        {
+            "descricao": "5º Lugar: \nPink Floyd - 'The Dark Side of the Moon'",
+            "imagem": "assets/img/PinkFloyd.webp"
+        },
+        {
+            "descricao": "6º Lugar:\nTomZe - 'Todos os Olhos'",
+            "imagem": "assets/img/TomZe.webp"
+        },
+        {
+            "descricao": "7º Lugar: \nQueen - 'Queen II'",
+            "imagem": "assets/img/Queen.webp"
+        },
+        {
+            "descricao": "8º Lugar: \nThe Beatles - 'SargentPeppers'",
+            "imagem": "assets/img/SargentPeppers.webp"
+        },
+        {
+            "descricao": "9º Lugar: \nSecos e Molhados - 'Secos e Molhados'",
+            "imagem": "assets/img/SecosEMolhados.webp"
+        },
+        {
+            "descricao": "10º Lugar:\n The Clash - 'London Calling'",
+            "imagem": "assets/img/TheClash.webp"
+        }
+    ],
+    "RecemAdicionados": [
+        {
+            "artista": "BobMarley \n 'Rumours'",
+            "capa": "assets/img/BobMarley.webp",
+            "genero": "Reggae"
+        },
+        {
+            "artista": "Cartola \n 'Verde que te quero Rosa'",
+            "capa": "assets/img/Cartola.webp",
+            "genero": "Samba"
+        },
+        {
+            "artista": "David Garett \n 'Encore'",
+            "capa": "assets/img/DavidGarett.webp",
+            "genero": "Clássica"
+        },
+        {
+            "artista": "The Beatles \n 'Abbey Road'",
+            "capa": "assets/img/AbbeyRoad.webp",
+            "genero": "Rock"
+        },
+        {
+            "artista": "JulioIglesias \n 'Romances'",
+            "capa": "assets/img/JulioIglesias.webp",
+            "genero": "Romântica"
+        },
+        {
+            "artista": "Led Zeppelin \n 'Vol. III'",
+            "capa": "assets/img/LedZeppelin.webp",
+            "genero": "Rock"
+        },
+        {
+            "artista": "Michael Jackson \n 'Bad'",
+            "capa": "assets/img/MichaelJacson.webp",
+            "genero": "Pop"
+        },
+        {
+            "artista": "Miles Davis \n 'Kind of Blue'",
+            "capa": "assets/img/MilesDavis.webp",
+            "genero": "Blues"
+        },
+        {
+            "artista": "Milton Nascimento \n 'Clube da Esquina nº 2'",
+            "capa": "assets/img/MiltonNascimento.webp",
+            "genero": "MPB"
+        },
+        {
+            "artista": "Nina Simone \n 'Sins & Play the Blues'",
+            "capa": "assets/img/NinaSimone.webp",
+            "genero": "MPB"
+        }
+    ],
+    "Usuarios": [
+        {
+            "name": "João Silva",
+            "email": "joao.silva@example.com",
+            "image": "img\fabiana.png",
+            "ranking": 5,
+            "socialMedia": "https://twitter.com/joaosilva",
+            "categories": [
+                "Rock",
+                "Jazz",
+                "Blues"
+            ]
+        }
+    ]
+}
