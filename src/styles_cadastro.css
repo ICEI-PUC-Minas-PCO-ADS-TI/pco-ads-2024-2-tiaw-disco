@@ -105,6 +105,10 @@ button#botao_Dourado {
     background-color: #A4967A;
 }
 
+#filtros{
+    padding-top: 60px;
+}
+
 #botao_Filtro {
     background-color: #267A80; /* Cor verde pré-definida */
     color: white;
@@ -163,6 +167,34 @@ button#botao_Dourado {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
+#ir_Cadastrar{
+    padding: 20px;
+}
+
+#lista-discos{
+    text-align: center;
+}
+
+#cadastro_tela{
+    justify-items: center;
+    padding-top: 60px;
+    text-align: center;
+}
+
+#editar_tela{
+    margin-top: 130px;
+    justify-items: center;
+    text-align: center;
+}
+
+#botao_Verde{
+ margin: 10px;
+}
+
+#botao_Rosa{
+    margin: 10px;
+   }
 
 /* Adicionando cores específicas para cada categoria */
 .categoria:nth-child(1) {
@@ -251,8 +283,23 @@ button#botao_Dourado {
 
     #filtros {
         width: 100%;
-        padding: 0 10px;
+        padding: 120px 10px 0 10px;
+        justify-content: center;
     }
+
+    #cadastro_tela{
+        justify-items: center;
+        padding-top: 300px;
+    }
+
+    #editar_tela{
+        margin-top: 520px;
+    }
+
+    #form-editar{
+        margin: 30px;
+    }
+    
 }
 
 @media (max-width: 480px) {
