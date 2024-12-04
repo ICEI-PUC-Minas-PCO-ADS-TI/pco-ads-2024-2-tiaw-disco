@@ -1,29 +1,32 @@
 @import url('https://fonts.cdnfonts.com/css/tilt-warp');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
 }
+
 .logosite {
     width: 100%;
 }
 
 body {
-    flex: 1; 
-    display: flex; 
+    flex: 1;
+    display: flex;
     flex-direction: column;
     padding: 10px;
-    padding-top: 80px; 
+    padding-top: 80px;
     box-sizing: border-box;
     min-height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
 }
-main { 
-    flex: 2; 
+
+main {
+    flex: 2;
 }
 
 header {
@@ -31,23 +34,34 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 footer {
     display: flex;
-    position:static;
     width: 100%;
-    height: 23%;
+    background-color: #000;
+    text-decoration: none !important;
+    position: relative;
     bottom: 0;
-    background-color: #000;  
-    z-index: 1000; 
-    margin-top: 30px;
-    margin-bottom: 10;
-    left: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+    text-align: left;
+    color: white;
+    height: 100px;
+    margin-left: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer .container-fluid {
+
+    width: 100%;
+}
+
+footer .row {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 header nav {
@@ -57,7 +71,7 @@ header nav {
     padding: 10px 20px;
 }
 
-#botao_index{
+#botao_index {
     margin: 30px;
 }
 
@@ -79,8 +93,8 @@ header nav {
 .user-img {
     flex: 0 0 auto;
     margin-right: 20px;
-    width: 200px; 
-    height: 200px; 
+    width: 200px;
+    height: 200px;
 }
 
 .user-img img {
@@ -89,7 +103,7 @@ header nav {
     object-fit: cover;
     width: 120%;
     height: 120%;
-    
+
 }
 
 .user-info {
@@ -98,8 +112,8 @@ header nav {
     text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items:start;
+    justify-content: center;
+    align-items: start;
     margin-top: 10px;
     margin-left: 40px;
 }
@@ -108,89 +122,98 @@ header nav {
     font-family: 'Tilt Warp', sans-serif;
     display: flex;
     align-items: center;
-    
+
 }
 
-.colecao { 
+.colecao {
     font-family: 'Tilt Warp', sans-serif;
-    position: relative; 
+    position: relative;
     display: flex;
-    width: 500px; 
-    height: 250px; 
-} 
-.colecao img { 
-    width: 100%; 
-    height: 100%; 
-} 
-.colecao p { 
-    position: absolute; 
-    font-size: 1.2em;
-    color: rgb(0, 0, 0); 
-
-} 
-.colecao p:nth-child(2) { 
-    top: 10px; 
-    left: 140px; 
-} 
-.colecao p:nth-child(3) { 
-    top: 50px; 
-    left: 70px;
-} 
-.colecao p:nth-child(4) { 
-    top: 90px; 
-    left: 70px; 
-} 
-.colecao p:nth-child(5) { 
-    top: 130px; 
-    left: 70px; 
-} 
-.colecao p:nth-child(6) { 
-    top: 170px; 
-    left: 70px; 
+    width: 500px;
+    height: 250px;
 }
 
-.categorias{
+.colecao img {
+    width: 100%;
+    height: 100%;
+}
+
+.colecao p {
+    position: absolute;
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+
+}
+
+.colecao p:nth-child(2) {
+    top: 10px;
+    left: 140px;
+}
+
+.colecao p:nth-child(3) {
+    top: 50px;
+    left: 70px;
+}
+
+.colecao p:nth-child(4) {
+    top: 90px;
+    left: 70px;
+}
+
+.colecao p:nth-child(5) {
+    top: 130px;
+    left: 70px;
+}
+
+.colecao p:nth-child(6) {
+    top: 170px;
+    left: 70px;
+}
+
+.categorias {
     font-family: 'Tilt Warp', sans-serif;
     padding: 20px;
     margin-left: 30px;
     color: black;
-    
+
 }
-.categorias button { 
+
+.categorias button {
     background-color: rgb(0, 0, 0);
     color: white;
-    width: 110px; 
-    height: 110px; 
-    border-radius: 0; 
+    width: 110px;
+    height: 110px;
+    border-radius: 0;
     border-color: black;
     box-sizing: border-box;
     border: 10px;
-    border-style:double;
+    border-style: double;
     margin: 3px;
- }
+}
+
 .categorias button:hover {
     transform: scale(1.1);
 }
 
 
-.adicionarAlbum{
-    font-family: 'Tilt Warp', sans-serif;   
-    background-color:#7F1F5B;
+.adicionarAlbum {
+    font-family: 'Tilt Warp', sans-serif;
+    background-color: #7F1F5B;
     color: white;
-    width: 300px; 
-    height: 100px; 
-    border-radius: 10px; 
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
     margin-top: 10px;
     margin-left: 250px;
-    text-align:center;
+    text-align: center;
     font-size: 1.3em;
     justify-content: center;
-    align-items: center;       
+    align-items: center;
 }
 
-.redes{
+.redes {
     font-family: 'Tilt Warp', sans-serif;
-    text-decoration:none;
+    text-decoration: none;
     color: black;
     align-items: center;
     margin-left: 30px;
@@ -198,8 +221,9 @@ header nav {
     text-decoration-line: none;
     text-decoration-color: black;
     margin-top: 50px;
-    
+
 }
+
 .corpo {
     padding: 100px;
     flex: 1;
@@ -221,9 +245,10 @@ a {
     text-align: left;
     width: 100%;
 }
+
 .custom-btn {
     display: flex;
-    background-color:#7F1F5B;
+    background-color: #7F1F5B;
     margin-left: 30px;
     margin-top: 10px;
     border-color: black;
@@ -232,10 +257,11 @@ a {
     text-align: center;
     justify-content: center;
     align-items: center;
-    
-    
-    
+
+
+
 }
+
 .custom-btn.btn-danger:hover {
     background-color: #a40c01;
     transform: scale(1.1);
@@ -251,4 +277,4 @@ a {
     background-color: #A4967A;
     border-color: black;
     transform: scale(1.1);
-    }
+}

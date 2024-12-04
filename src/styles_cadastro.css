@@ -1,7 +1,7 @@
-/* Fonte Importada */
-@import url('https://fonts.cdnfonts.com/css/lulo-clean');
+@import url('https://fonts.cdnfonts.com/css/tilt-warp');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.cdnfonts.com/css/lulo-clean');
+
 
 body {
     font-family: 'League Spartan', sans-serif;
@@ -14,6 +14,7 @@ body {
     background-color: #f0f0f0;
     flex-direction: column;
     text-align: center;
+    font-family: 'Tilt Warp';
 }
 
 header {
@@ -21,23 +22,39 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 footer {
     display: flex;
-    position:static;
     width: 100%;
-    height: 23%;
+    background-color: #000;
+    text-decoration: none !important;
+    position: relative;
     bottom: 0;
-    background-color: #000;  
-    z-index: 1000; 
-    margin-top: 40px;
-    margin-bottom: 10px;
-    left: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+    text-align: left;
+    color: white;
+    height: 100px;
+    margin-left: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer .container-fluid {
+
+    width: 100%;
+}
+
+footer .row {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    width: 100%;
+}
+
+main {
+    margin-top: 100px;
+    padding: 20px;
 }
 
 header nav {
@@ -48,12 +65,13 @@ header nav {
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
-    text-transform: uppercase;
-    color: black;
-    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-family: 'Tilt Warp';
+    color: white;
+    text-align: center;
+    margin-right: 40px;
 }
+
 
 form {
     background-color: #fff;
@@ -78,7 +96,9 @@ img#capa {
     margin: 0 auto 10px auto;
 }
 
-input, select, button {
+input,
+select,
+button {
     margin-bottom: 10px;
     padding: 10px;
     width: 100%;
@@ -105,12 +125,12 @@ button#botao_Dourado {
     background-color: #A4967A;
 }
 
-#filtros{
-    padding-top: 60px;
+#filtros {
+    padding-top: 20px;
 }
 
 #botao_Filtro {
-    background-color: #267A80; /* Cor verde pré-definida */
+    background-color: #267A80;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -119,7 +139,7 @@ button#botao_Dourado {
     margin-top: 10px;
 }
 
-/* Estilização para o contêiner de cartões */
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -149,6 +169,10 @@ button#botao_Dourado {
 
 .card button {
     margin-top: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2em;
 }
 
 .categorias {
@@ -161,80 +185,104 @@ button#botao_Dourado {
 
 .categoria {
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 12px;
     padding: 10px;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-#ir_Cadastrar{
+#ir_Cadastrar {
     padding: 20px;
 }
 
-#lista-discos{
+#lista-discos {
     text-align: center;
 }
 
-#cadastro_tela{
+#cadastro_tela {
     justify-items: center;
-    padding-top: 60px;
+    padding-top: 30px;
     text-align: center;
 }
 
-#editar_tela{
+#editar_tela {
     margin-top: 130px;
     justify-items: center;
     text-align: center;
 }
 
-#botao_Verde{
- margin: 10px;
+#botao_Verde {
+    margin: 10px;
+    border-radius: 8px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.5em;
+    justify-content: center;
 }
 
-#botao_Rosa{
+#botao_Rosa {
     margin: 10px;
-   }
+    border-radius: 8px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2em;
+}
+#capa{
+ 
+       
+        font-family: 'League Spartan', sans-serif;
+        font-size: 1.2em;
+        
+}
 
-/* Adicionando cores específicas para cada categoria */
+
 .categoria:nth-child(1) {
-    background-color: #7F1F5B; /* Todas */
+    background-color: #7F1F5B;
+
 }
 
 .categoria:nth-child(2) {
-    background-color: black; /* Rock */
+    background-color: black;
+    /* Rock */
 }
 
 .categoria:nth-child(3) {
-    background-color: #A4967A; /* Pop */
+    background-color: #A4967A;
+    /* Pop */
 }
 
 .categoria:nth-child(4) {
-    background-color: #267A80; /* Clássica */
+    background-color: #267A80;
+    /* Clássica */
 }
 
 .categoria:nth-child(5) {
-    background-color: #7F1F5B; /* Romântica */
+    background-color: #7F1F5B;
+    /* Romântica */
 }
 
 .categoria:nth-child(6) {
-    background-color: black; /* MPB */
+    background-color: black;
+    /* MPB */
 }
 
 .categoria:nth-child(7) {
-    background-color: #A4967A; /* Jazz */
+    background-color: #A4967A;
+    /* Jazz */
 }
 
 .categoria:nth-child(8) {
-    background-color: #267A80; /* Samba */
+    background-color: #267A80;
+    /* Samba */
 }
 
 .categoria:nth-child(9) {
-    background-color: #7F1F5B; /* Blues */
+    background-color: #7F1F5B;
+    /* Blues */
 }
 
 .categoria:nth-child(10) {
-    background-color: black; /* Reggae */
+    background-color: black;
+    /* Reggae */
 }
 
 .categoria:hover {
@@ -242,15 +290,16 @@ button#botao_Dourado {
 }
 
 
-
+/* 
 /* Ajuste de responsividade */
 @media (max-width: 768px) {
     body {
-        padding: 20px;
+        padding: 0px;
         height: auto;
     }
 
-    form, .card {
+    form,
+    .card {
         width: 100%;
         max-width: 100%;
     }
@@ -266,13 +315,14 @@ button#botao_Dourado {
 }
 
 /* Ajuste de responsividade */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     body {
-        padding: 20px;
+        padding: 00px;
         height: auto;
     }
 
-    form, .card {
+    form,
+    .card {
         width: 100%;
         max-width: 100%;
     }
@@ -287,25 +337,23 @@ button#botao_Dourado {
         justify-content: center;
     }
 
-    #cadastro_tela{
+    #cadastro_tela {
         justify-items: center;
         padding-top: 300px;
     }
 
-    #editar_tela{
+    #editar_tela {
         margin-top: 520px;
     }
 
-    #form-editar{
+    #form-editar {
         margin: 30px;
     }
-    
+
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 24px;
-    }
+    
 
     button {
         padding: 10px;
@@ -315,4 +363,10 @@ button#botao_Dourado {
     .card {
         width: calc(100% - 20px);
     }
+} 
+#form-cadastro {
+    width: 130%;
+   
+    overflow-y: auto;
+    margin: auto;
 }
