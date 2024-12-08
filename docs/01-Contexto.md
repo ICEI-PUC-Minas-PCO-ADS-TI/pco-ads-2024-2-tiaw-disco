@@ -1,3 +1,4 @@
+<img src="docs/images/LogoDisco/LogoDisco.webp" alt="Discô" width="20%">
 # Introdução
 
 O projeto do site **DISCÔ** surge em um contexto do crescente interesse pelo colecionismo de discos de vinil, um hobby que tem ganhado popularidade
