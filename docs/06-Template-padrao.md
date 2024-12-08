@@ -9,7 +9,9 @@
 
 
 <img src="./images/ManualDaMarca.png" alt="Manual da Marca" width="60%">
-docs/images/ManualDaMarca.png
+
+<p></p> 
+
 
 # Página Home para Desktop
 ![Home-Desktop](images/telas/HomeDesktop.png)
