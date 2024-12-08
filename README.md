@@ -40,8 +40,6 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 <li><a href="docs/05-Projeto-interface.md"> Projeto de interface</a></li>
 <li><a href="docs/06-Template-padrao.md"> Template padrão da aplicação</a></li>
 <li><a href="docs/07-Arquitetura-solucao.md"> Arquitetura da solução</a></li>
-<li><a href="docs/08-Plano-testes-software.md"> Plano de testes de software</a></li>
-<li><a href="docs/09-Registro-testes-software.md"> Registro de testes de software</a></li>
 <li><a href="docs/10-Referencias.md"> Referências</a></li>
 </ol>
 
