@@ -20,15 +20,10 @@ O nosso projeto é um site dedicado a colecionadores e intusiastas de disco de v
 
 - Amália Soares Vieira de Vasconcelos
 
-## Instruções de utilização
+## Hospedagem
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+A aplicação estará disponível para acesso em [Site Discô](https://discotechz.netlify.app/)
 
-Não deixe de informar o link onde a aplicação estará disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
-
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
-
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
 
 # Documentação
 
@@ -45,10 +40,9 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 
 # Código
 
-* <a href="src/README.md">Código</a>
+* <a href="./src/Home.html">Código</a>
 
 # Apresentação
 
 [apresentação final discô](./presentation/apresentacaoDiscoFinal.pdf)
-
 
