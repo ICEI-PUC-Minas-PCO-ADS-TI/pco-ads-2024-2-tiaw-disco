@@ -61,10 +61,10 @@ O projeto foi desenvolvido a partir de plataformas na qual foi solicitado que fo
 
 | Ambiente                            | Plataforma                         | Link de acesso                       |
 |-------------------------------------|------------------------------------|--------------------------------------|
-| Processo de Design Thinking         | Miro                               | https://miro.com/app/board/uXjVKoqwSiA=/        |
-| Repositório de código fonte         | GitHub                             | https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/pco-ads-2024-2-tiaw-disco/tree/main/src  |
-| Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/pco-ads-2024-2-tiaw-disco/tree/main/docs |
+| Processo de Design Thinking         | Miro                               | [Miro Discô](https://miro.com/app/board/uXjVKoqwSiA=/  )      |
+| Repositório de código fonte         | GitHub                             | [Repositorio Discô](https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/pco-ads-2024-2-tiaw-disco/tree/main/src)  |
+| Documentos do projeto               | GitHub                             | [Documentação Discô](https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/pco-ads-2024-2-tiaw-disco/tree/main/docs) |
 |  |
-| Projeto de interface                | Figma                              | [Protótipo interativo Discô](https://www.figma.com/proto/TaOnXLbU3ltnHC6QtmGmII/Disc%C3%B4?page-id=165%3A56&node-id=178-207&node-type=canvas&viewport=-995%2C438%2C0.43&t=lYpQo7QsmEBUYCfU-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=322%3A68)   |
-| Hospedagem                          | GitHub                             | http://....    ⚠️ EXEMPLO ⚠️        |
+| Projeto de interface                | Figma                              | [Protótipo Interativo Discô](https://www.figma.com/proto/TaOnXLbU3ltnHC6QtmGmII/Disc%C3%B4?page-id=165%3A56&node-id=178-207&node-type=canvas&viewport=204%2C322%2C0.13&t=242NIbwpdxNrt5Mj-1&scaling=scale-down&content-scaling=fixed)   |
+| Hospedagem                          | Netlify                            | [Site Discô](https://discotechz.netlify.app/)      |
  
