@@ -54,15 +54,6 @@ __*Implementação do Framework Scrum*__
 
 **Sprints**: Cada sprint começa com uma breve reunião em sala de aula todas as Terças-Feiras, onde o grupo define as tarefas a serem realizadas por cada membro e como está o andamento de cada sprint elaborada, essas reuniões diarias é feita para sincronizar o progresso do trabalho e ajustar os planos conforme a necessidade. A ideia central é garantir que todos estejam focados no projeto e para que possamos permanecer alinhados.
 
-Coloque uma imagem da estrutura da ferramenta de controle de tarefas (Kanban) e o link do GitHub Projects.
- 
-> **Links úteis**:
-> - [GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-> - [Planejamento e gestão ágil de projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Como criar backlogs no GitHub](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial slack](https://slack.com/intl/en-br/)
 
 ### Ferramentas
 
@@ -73,7 +64,7 @@ O projeto foi desenvolvido a partir de plataformas na qual foi solicitado que fo
 | Processo de Design Thinking         | Miro                               | https://miro.com/app/board/uXjVKoqwSiA=/        |
 | Repositório de código fonte         | GitHub                             | https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/pco-ads-2024-2-tiaw-disco/tree/main/src  |
 | Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/pco-ads-2024-2-tiaw-disco/tree/main/docs |
-| Gerenciamento do projeto            | GitHub Projects                    | http://....    ⚠️ EXEMPLO ⚠️        |
-| Projeto de interface                | Figma                              | http://....    ⚠️ EXEMPLO ⚠️        |
+|  |
+| Projeto de interface                | Figma                              | [Protótipo interativo Discô](https://www.figma.com/proto/TaOnXLbU3ltnHC6QtmGmII/Disc%C3%B4?page-id=165%3A56&node-id=178-207&node-type=canvas&viewport=-995%2C438%2C0.43&t=lYpQo7QsmEBUYCfU-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=322%3A68)   |
 | Hospedagem                          | GitHub                             | http://....    ⚠️ EXEMPLO ⚠️        |
  
