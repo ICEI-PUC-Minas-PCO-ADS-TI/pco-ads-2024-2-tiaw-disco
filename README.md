@@ -22,7 +22,7 @@ O nosso projeto é um site dedicado a colecionadores e intusiastas de disco de v
 
 ## Hospedagem
 
-A aplicação estará disponível para acesso em [Site Discô](https://discotechz.netlify.app/)
+* A aplicação estará disponível para acesso em [Site Discô](https://discotechz.netlify.app/)
 
 
 # Documentação
