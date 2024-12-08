@@ -42,7 +42,9 @@ A aplicação estará disponível para acesso em [Site Discô](https://discotech
 
 * <a href="./src/Home.html">Código</a>
 
+* [Site Discô](https://discotechz.netlify.app/) 
+
 # Apresentação
 
-[apresentação final discô](./presentation/apresentacaoDiscoFinal.pdf)
+* [apresentação final discô](./presentation/apresentacaoDiscoFinal.pdf)
 
