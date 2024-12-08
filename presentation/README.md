@@ -4,6 +4,8 @@
 
 
 ## Slides
+[apresentação parcial discô](./AppresentacaoDisco1.pdf)
+
 [apresentação final discô](./aprsentação%20disco.pdf)
 
 
