@@ -1,0 +1,102 @@
+@import url('https://fonts.cdnfonts.com/css/tilt-warp');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lulo-clean');
+
+body {
+    background-color: #267A80;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #000;
+    text-decoration: none !important;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+    text-align: left;
+    color: white;
+    height: 100px;
+}
+
+p {
+    background-color: #267A80;
+    color: white;
+    font-family: 'League Spartan';
+    font-size: 22px;
+    text-align: justify;
+}
+
+h1 {
+    background-color: #267A80;
+    color: white;
+    font-family: 'Tilt Warp';
+    font-size: 22px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+body {
+    font-family: 'Tilt Warp';
+    line-height: 1.6;
+    background-color: #267A80;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+.corpo {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+h1,
+h2,
+h3 {
+    color: white;
+    font-family: 'Tilt Warp';
+    background-color: #267A80;
+
+}
+
+.cabecalho {
+    color: white;
+    font-family: 'Tilt Warp';
+    text-align: center;
+    padding: 2rem 0;
+    text-align: justify;
+}
+
+
+
+ul {
+    background-color: #267A80;
+    color: white;
+    font-family: 'League Spartan';
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.5em;
+    text-align: justify;
+}
+main{
+    color: white;
+    background-color: #267A80;
+}
+.junte-button {
+    display: block;
+    margin: 0 auto 20px auto;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'League Spartan';
+    font-size: 2em;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+    <did class="container">
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <a class="navbar-brand" href="Home.html">
+                        <img src="assets/img/LogoDisco.webp" alt="Logo DISCÔ" style="width: 200px;">
+                    </div></a>
+
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome Completo</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Nome Completo" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Nova senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Confirmpassword">Confirme sua senha</label>
+                        <input id="Confirmpassword" type="password" name="Confirmpassword"
+                            placeholder="Confirme sua senha" required>
+                    </div>
+                </div>
+
+                <!-- Botão para ativar a chave de acesso (aparecerá após ativar o modo administrador com Ctrl + Shift + A) -->
+                <button id="btnChaveAcesso" style="display: none;" onclick="mostrarCampoChaveAcesso()">Adicionar Chave de Acesso</button>
+
+                    <!-- Campo Tipo de Usuário (exibido ao pressionar Ctrl + Shift + A) -->
+                    <div class="input-box" id="tipoUsuarioContainer" style="display: none;">
+                        <label for="tipoUsuario">Tipo de Usuário</label>
+                        <select id="tipoUsuario">
+                     <option value="usuario">Usuário</option>
+                    <option value="admin">Administrador</option>
+                 </select>
+                </div>
+
+                <!-- Campo de Chave de Acesso (exibido ao pressionar Ctrl + Shift + A e escolher Admin) -->
+                <div class="input-box" id="chaveAcessoContainer" style="display: none;">
+                 <label for="chaveAcesso">Chave de Acesso</label>
+                <input id="chaveAcesso" type="password" placeholder="Digite a chave de acesso" />
+                    </div>
+
+                
+
+
+                <div class="button">
+                    <button type="button" onclick="cadastrar()"><a href="#">CADASTRAR</a></button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="./assets/js/cadastro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlH/icU1mJUXq+M4L7k46pZxLMh30BDb9wf3l5cd2R5PzJbFZ+vqGq9K3UR" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-C2IFlqfBc0XNCLzGVbgCkQSTrQ5IHb55Zll2BWQ7U+6FBErULJf4FdtdgMvwmN" crossorigin="anonymous"></script>
+    <script src="assets/js/loginhome.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+
+</html>

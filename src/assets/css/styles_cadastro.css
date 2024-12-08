@@ -1,0 +1,372 @@
+@import url('https://fonts.cdnfonts.com/css/tilt-warp');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lulo-clean');
+
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Tilt Warp';
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #000;
+    text-decoration: none !important;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+    text-align: left;
+    color: white;
+    height: 100px;
+    margin-left: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer .container-fluid {
+
+    width: 100%;
+}
+
+footer .row {
+    margin: 0;
+    width: 100%;
+}
+
+main {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+h1 {
+    font-size: 1.2em;
+    font-family: 'Tilt Warp';
+    color: white;
+    text-align: center;
+    margin-right: 40px;
+}
+
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+img#capa {
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+input,
+select,
+button {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #267A80;
+    color: white;
+    cursor: pointer;
+    width: auto;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+button#botao_Rosa {
+    background-color: #7F1F5B;
+}
+
+button#botao_Dourado {
+    background-color: #A4967A;
+}
+
+#filtros {
+    padding-top: 20px;
+}
+
+#botao_Filtro {
+    background-color: #267A80;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.card button {
+    margin-top: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2em;
+}
+
+.categorias {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.categoria {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#ir_Cadastrar {
+    padding: 20px;
+}
+
+#lista-discos {
+    text-align: center;
+}
+
+#cadastro_tela {
+    justify-items: center;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#editar_tela {
+    margin-top: 130px;
+    justify-items: center;
+    text-align: center;
+}
+
+#botao_Verde {
+    margin: 10px;
+    border-radius: 8px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.5em;
+    justify-content: center;
+}
+
+#botao_Rosa {
+    margin: 10px;
+    border-radius: 8px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2em;
+}
+#capa{
+ 
+       
+        font-family: 'League Spartan', sans-serif;
+        font-size: 1.2em;
+        
+}
+
+
+.categoria:nth-child(1) {
+    background-color: #7F1F5B;
+
+}
+
+.categoria:nth-child(2) {
+    background-color: black;
+    /* Rock */
+}
+
+.categoria:nth-child(3) {
+    background-color: #A4967A;
+    /* Pop */
+}
+
+.categoria:nth-child(4) {
+    background-color: #267A80;
+    /* Clássica */
+}
+
+.categoria:nth-child(5) {
+    background-color: #7F1F5B;
+    /* Romântica */
+}
+
+.categoria:nth-child(6) {
+    background-color: black;
+    /* MPB */
+}
+
+.categoria:nth-child(7) {
+    background-color: #A4967A;
+    /* Jazz */
+}
+
+.categoria:nth-child(8) {
+    background-color: #267A80;
+    /* Samba */
+}
+
+.categoria:nth-child(9) {
+    background-color: #7F1F5B;
+    /* Blues */
+}
+
+.categoria:nth-child(10) {
+    background-color: black;
+    /* Reggae */
+}
+
+.categoria:hover {
+    background-color: #ddd;
+}
+
+
+/* 
+/* Ajuste de responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 0px;
+        height: auto;
+    }
+
+    form,
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    img#capa {
+        max-width: 100%;
+    }
+
+    #filtros {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+/* Ajuste de responsividade */
+@media (max-width: 900px) {
+    body {
+        padding: 00px;
+        height: auto;
+    }
+
+    form,
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    img#capa {
+        max-width: 100%;
+    }
+
+    #filtros {
+        width: 100%;
+        padding: 120px 10px 0 10px;
+        justify-content: center;
+    }
+
+    #cadastro_tela {
+        justify-items: center;
+        padding-top: 300px;
+    }
+
+    #editar_tela {
+        margin-top: 520px;
+    }
+
+    #form-editar {
+        margin: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    
+
+    button {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .card {
+        width: calc(100% - 20px);
+    }
+} 
+#form-cadastro {
+    width: 130%;
+   
+    overflow-y: auto;
+    margin: auto;
+}

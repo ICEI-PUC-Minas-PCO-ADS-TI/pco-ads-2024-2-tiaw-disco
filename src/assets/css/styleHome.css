@@ -1,0 +1,377 @@
+@import url('https://fonts.cdnfonts.com/css/tilt-warp');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lulo-clean');
+
+body {
+
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #000;
+    text-decoration: none !important;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+    text-align: left;
+    color: white;
+    height: 100px;
+}
+
+.texto-footer {
+    text-decoration: none;
+    color: inherit !important;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-top: 20px;
+    z-index: 10000px;
+}
+
+a,
+* {
+    text-decoration: none !important;
+    color: inherit
+}
+
+
+#banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 900px;
+    margin: 15px auto;
+    gap: 20px;
+    text-decoration: none;
+}
+
+#imgBanner {
+    width: 35%;
+    height: 300px;
+    background-color: #000000;
+    color: white;
+    text-align: right;
+    padding: 5px 0;
+    display: block;
+    margin-right: auto;
+}
+
+#txt {
+    display: flex;
+    flex: 1;
+    color: rgb(255, 255, 255);
+    font-size: 1.8em;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    font-family: 'Lulo Clean';
+    text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+@media (max-width: 768px) {
+    #banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #imgBanner {
+        margin-bottom: 20px;
+    }
+}
+
+.junte-button {
+    display: block;
+    margin: 0 auto 20px auto;
+    border: none;
+    background-color: #267A80;
+    color: white;
+    padding: 10px 100px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'League Spartan';
+    font-size: 2em;
+}
+
+.junte-button:hover {
+    background-color: #A4967A;
+}
+
+/* CARROSSEL 1 */
+.carousel {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+}
+
+#top10lText {
+    font-size: 1.2em;
+    font-family: 'Tilt Warp';
+    color: white;
+    text-align: right;
+    margin-right: 40px;
+}
+
+.navButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 2px;
+    z-index: 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+#artifactBanner {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease-in-out;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 60px;
+}
+
+#artifactBanner img {
+    width: 100%;
+    height: 300px;
+}
+
+#carouselImageContainer {
+    width: 80%;
+    height: 300px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#carouselImage {
+    width: 100%;
+    height: 100%;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+}
+
+#carouselTextContainer {
+    width: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 200px;
+}
+
+.p {
+    padding: 120px;
+}
+
+.carousel-indicators {
+    display: flex;
+    position: relative;
+    bottom: 10px;
+    z-index: 10;
+    margin: 50px;
+    justify-content: center;
+}
+
+.carousel-indicator {
+    width: 12px;
+    height: 12px;
+    margin: 3px 5px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-indicator.active {
+    background-color: rgb(0, 0, 0);
+}
+
+#artifactBanner {
+    position: relative;
+}
+
+.titulos {
+
+    color: black;
+    font-family: 'Tilt Warp';
+    font-size: 2em;
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* CARROSSEL 2 */
+.carousel2 {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+}
+
+#RecemAdicionadoslText {
+    font-size: 1.2em;
+    font-family: 'Tilt Warp';
+    color: white;
+    text-align: right;
+    margin-right: 40px;
+}
+
+.navButton2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 2px;
+    z-index: 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+#prevBtn2 {
+    left: 10px;
+
+}
+
+#nextBtn2 {
+    right: 10px;
+}
+
+#artifactBanner2 {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease-in-out;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 60px;
+
+}
+
+#artifactBanner2 img {
+    width: 100%;
+    height: 300px;
+
+}
+
+#carousel2ImageContainer {
+    width: 80%;
+    height: 300px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#carousel2Image {
+    width: 100%;
+    height: 100%;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+}
+
+#carousel2TextContainer {
+    width: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 200px;
+}
+
+.carousel-indicators2 {
+    display: flex;
+    position: relative;
+    bottom: 10px;
+    z-index: 10;
+    margin: 50px;
+    justify-content: center;
+}
+
+
+.carousel2-indicator {
+    width: 12px;
+    height: 12px;
+    margin: 3px 5px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(101, 99, 99);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel2-indicator.active {
+    background-color: rgb(0, 0, 0);
+}
+
+#artifactBanner2 {
+    position: relative;
+}

@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a39376;
+    color: white;
+}
+
+.contato {
+    background-color: #581158;
+    font-family: Arial, sans-serif;
+    font-size: x-large;
+}
+
+
+
+ h1 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    
+    margin-top: 20px;
+}
+
+tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+th{
+    
+    
+}
+
+tbody{
+
+}
+
+
+
+
+
+#mensagensContainer tr {
+    background-color: #e6e2db;
+    border: 1px solid #e6e2db;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+
+#mensagensContainer td {
+    padding: 10px;
+    background-color: #e6e2db;
+    color: black;
+    border: 10px;
+    flex: 1;
+    display: inline-block;
+    text-align: left;
+}
+
+#mensagensContainer tr:hover {
+    background-color: #beb595;
+}
+
+
+
+button {
+    background-color: #8a8888;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #555;
+}

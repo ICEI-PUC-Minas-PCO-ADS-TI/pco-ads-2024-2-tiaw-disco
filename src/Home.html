@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Discô</title>
+    <link rel="stylesheet" href="assets/css/styleHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-black">
+            <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand" href="Home.html">
+                    <img class="logosite" src="assets/img/LogoDiscoBranca.webp" height="80px" alt="logo">
+                </a>
+                <div id="user-section">
+                    <!-- Espaço para o ícone do usuário -->
+                </div>
+                <form class="d-flex" role="search">
+                    <a href="pesquisar.html" style="position: relative; left: -40px;">
+                        <i class="fa-solid fa-magnifying-glass" style="color: white; font-size: 2em;"></i>
+                    </a>
+                    <a id="login-link" href="login.html" style="position: relative; left: -20px;">
+                        <i class="fa-solid fa-right-to-bracket" style="color: white; font-size: 2em;"></i>
+                    </a>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-md-12 col-sm-3">
+                <div id="banner">
+                    <img id="imgBanner" src="assets/img/banner1.webp" alt="600px" height="600px">
+                    <div id="txt">
+                        <h2 id="descricao">Transforme sua coleção em uma obra de arte</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão cadastre-se -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-md-12 col-sm-3">
+                <div class="junte-container">
+                    <a href="Login.Html" style="color: inherit; text-decoration: none;">
+                        <button class="junte-button"><strong>JUNTE-SE A NÓS, É GRÁTIS!</strong> </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrossel 1 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-md-12 mb-4">
+                <h2 class="titulos"><strong>TOP 10</strong></h2>
+                <div id="top10" class="carousel">
+                    <div id="artifactBanner">
+                        <div id="carouselImageContainer">
+                            <img id="carouselImage" src="assets/img/FleetwoodMac.webp" alt="600px" height="600px">
+                        </div>
+                        <div id="carouselTextContainer">
+                            <div id="carouselText">
+                                <h2 id="caption">1º Lugar: Fleetwood Mac - 'Rumours'</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Setas de navegação -->
+                    <button id="prevBtn" class="navButton">&#10094;</button>
+                    <button id="nextBtn" class="navButton">&#10095;</button>
+                    <div id="carouselIndicators" class="carousel-indicators">
+                        <!-- Os pontos serão inseridos aqui dinamicamente -->
+                    </div>
+                </div>
+            </div>
+
+            <p></p>
+
+            <!-- Carrossel 2 -->
+            <div class="col col-md-12 mb-4">
+                <h2 class="titulos"><strong>RECÉM ADICIONADOS</strong></h2>
+                <div id="RecemAdicionados" class="carousel2">
+                    <div id="artifactBanner2">
+                        <div id="carousel2ImageContainer">
+                            <img id="carousel2Image" src="assets/img/AbbeyRoad.webp" alt="600px" height="600px">
+                        </div>
+                        <div id="carousel2TextContainer">
+                            <div id="carousel2Text">
+                                <h2 id="caption2">The Beatles - 'Abbey Road'</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Setas de navegação -->
+                    <button id="prevBtn2" class="navButton2">&#10094;</button>
+                    <button id="nextBtn2" class="navButton2">&#10095;</button>
+                    <div id="carousel2Indicators" class="carousel-indicators3">
+                        <!-- Os pontos serão inseridos aqui dinamicamente -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+
+    <footer class="container-fluid d-flex justify-content-between bg-black text-white">
+        <div class="container">
+            <div class="row">
+                <div class="texto-footer col-md-4 py-3">
+                    <a href="SobreNos.Html" style="color: inherit; text-decoration: none;">
+                        <h5>Sobre Nós</h5>
+                    </a>
+                    <a href="Contato.Html" style="color: inherit; text-decoration: none;">
+                        <h5>Contato</h5>
+                    </a>
+                </div>
+                <div class="col-md-4 py-2">
+                    <h5>Siga-nos</h5>
+                    <a href="https://www.instagram.com" class="btn btn-outline-light btn-sm me-2">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                    <a href="https://www.facebook.com" class="btn btn-outline-light btn-sm">
+                        <i class="bi bi-facebook"></i> Facebook
+                    </a>
+                </div>
+                <div class="col-md-4 text-end">
+                    <div class="mt-0 py-2">
+                        <img src="assets/img/SimboloDiscoBranco.webp" height="80px" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlH/icU1mJUXq+M4L7k46pZxLMh30BDb9wf3l5cd2R5PzJbFZ+vqGq9K3UR" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-C2IFlqfBc0XNCLzGVbgCkQSTrQ5IHb55Zll2BWQ7U+6FBErULJf4FdtdgMvwmN" crossorigin="anonymous"></script>
+    <script src="assets/js/scriptHome.js"></script>
+    <script src="assets/js/loginhome.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+
+</html>
