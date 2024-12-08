@@ -6,7 +6,7 @@
 ## Slides
 [apresentação parcial discô](./ApresentacaoDisco1.pdf)
 
-[apresentação final discô](./aprsentacaoDiscofinal.pdf)
+[apresentação final discô](./apresentacaoDiscoFinal.pdf)
 
 
 
