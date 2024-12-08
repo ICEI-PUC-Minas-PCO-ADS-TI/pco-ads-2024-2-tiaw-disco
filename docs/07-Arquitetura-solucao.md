@@ -92,7 +92,8 @@
 
 
 ## Hospedagem
+ - Hospedar e lançar uma plataforma no Netlify envolve criar uma conta e conectar seu projeto ao serviço, garantindo que o domínio esteja devidamente configurado. Com cada atualização de código, o Netlify automaticamente realiza o deploy e reflete as mudanças. Adicionalmente, as ferramentas de gerenciamento e monitoramento do Netlify permitem uma análise contínua do desempenho do site.
 
-Explique como a hospedagem e o lançamento da plataforma foram realizados.
+[Site Discô](https://discotechz.netlify.app/) 
 
 
