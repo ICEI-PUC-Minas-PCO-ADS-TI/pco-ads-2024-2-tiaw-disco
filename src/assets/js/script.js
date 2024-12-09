@@ -1,17 +1,10 @@
-// Evento DOMContentLoaded
-// Aguarda o carregamento completo do HTML para iniciar a execução do script, garantindo que todos os elementos DOM estejam disponíveis.
-
 document.addEventListener('DOMContentLoaded', function () {
-
-//  Seleciona os elementos do DOM onde as informações do perfil serão exibidas.   
     const profileName = document.querySelector('.nome');
     const profileEmail = document.querySelector('.email');
     const profileInstagram = document.querySelector('.redes a[href^="https://www.instagram.com"]');
     const profileFacebook = document.querySelector('.redes a[href^="https://www.facebook.com"]');
     const profileImage = document.querySelector('.user-img img');
 
-
-//  Carrega dados do localStorage e atualiza os elementos do perfil com essas informações, se disponíveis.   
     function loadProfile() {
         const storedName = localStorage.getItem('profileName');
         const storedEmail = localStorage.getItem('profileEmail');
@@ -31,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (storedImage) profileImage.src = storedImage;
     }
-// Atualiza os elementos do perfil com novos valores inseridos pelo usuário e salva essas informações no localStorage.
 
     window.saveProfile = function () {
         const newName = document.getElementById('profileName').value;
@@ -67,11 +59,10 @@ document.addEventListener('DOMContentLoaded', function () {
             reader.readAsDataURL(newImage);
         }
 
-       
         const modal = bootstrap.Modal.getInstance(document.getElementById('editProfileModal'));
         modal.hide();
     }
-// Remove todas as informações do localStorage e limpa os elementos do perfil no DOM, após confirmação do usuário.
+
     window.deleteAccount = function () {
         if (confirm('Você tem certeza que deseja sair da sua conta? Isso irá remover todas as suas informações armazenadas.')) {
             localStorage.clear();
@@ -81,13 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
             profileInstagram.textContent = '';
             profileFacebook.href = '';
             profileFacebook.textContent = '';
-            profileImage.src = '';
-            window.location.href = "home.html";
-           
-            const modal = bootstrap.Modal.getInstance(document.getElementById('editProfileModal'));
-            modal.hide();
+            profileImage.src = 'assets/img/fabiana.webp';
+            window.location.href = "index.html";
         }
     }
-// Chama a função loadProfile para carregar os dados do perfil quando a página é carregada.
+
     loadProfile();
 });

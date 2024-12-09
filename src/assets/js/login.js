@@ -19,7 +19,7 @@ document.getElementById("login-button").addEventListener("click", function () {
         if (usuarioValido.tipo === "admin") {
             window.location.href = "admin.html"; // Redireciona para a página do administrador
         } else {
-            window.location.href = "home.html";  // Redireciona para a página padrão
+            window.location.href = "index.html";  // Redireciona para a página padrão
         }
     } else {
         alert("E-mail ou senha incorretos!");
