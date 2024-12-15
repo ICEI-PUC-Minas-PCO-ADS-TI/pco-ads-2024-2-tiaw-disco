@@ -5,11 +5,11 @@
 ✅ [Documentação de Design Thinking - Discô (MIRO)](https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/pco-ads-2024-2-tiaw-disco/blob/main/docs/files/miro%20disc%C3%B4%20completo.pdf)
 
 ## Etapa de entendimento
-> * **Mapa de stakeholders**:
+ * **Mapa de stakeholders**:
 ![stalkeholders](images/miro/stalkeholders.png)
 
 
-> * **Entrevistas qualitativas**:
+ * **Entrevistas qualitativas**:
 ![Entrevista 1](images/miro/Entrevista1.png)
 
 
