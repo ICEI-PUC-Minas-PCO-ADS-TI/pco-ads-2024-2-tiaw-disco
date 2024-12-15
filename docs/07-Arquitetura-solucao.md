@@ -1,24 +1,11 @@
-<img src="./images/LogoDisco/LogoDisco.webp" alt="Discô" width="20%">
-
-
-
-# Informações do Projeto
-`Título do Projeto`==Discô 
-
-`Curso`==Análise e Desenvolvimento de Sistemas 
-
-`Disciplina`==Trabalho Interdisciplinar: Aplicações Web 
-
-
-
-## 1. Navegador
+##  Navegador
 
 ###  Tecnologias Utilizadas
 - HTML
 - CSS
 - JavaScript
 - Framework Bootstrap
-- - Bibliotecas HTML:
+- Bibliotecas HTML:
   - Font Awsome
 
 ###  Funcionalidades
@@ -37,11 +24,11 @@
 - Os dados armazenados no Local Storage são utilizados para exibir informações no site.
 - Interações do usuário (mensagens, atualizações de perfil, etc.) são armazenadas diretamente no Local Storage.
 
-## 2. Nuvem
+## Nuvem
 
 ###  Funcionalidades
 ###  Tecnologias Utilizadas
-- **Hospedagem**: Vercel
+- **Hospedagem**: Netlify
 - **Banco de Dados**: API fake com json-server
 
 ###  Funcionalidades
@@ -68,7 +55,7 @@
   - O navegador faz chamadas POST/PUT para a API para atualizar ou remover dados conforme necessário.
   - Após operações de escrita, o Local Storage é atualizado para refletir as mudanças.
  
-## 3. Integração
+## Integração
 
 ###  Comunicação Navegador-Nuvem
 - **Fetch API**:
@@ -85,7 +72,7 @@
 
 ###  Estrutura de Requisições
 - **GET /usuarios**: Obtém dados dos usuários.
-- **POST /usuarios**: Cria um novo usuário.
+- **POST /usuarios**: Cria um novo usuário.    
 - **PUT /usuarios/id**: Atualiza os dados de um usuário existente.
   
 
