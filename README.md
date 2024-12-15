@@ -35,6 +35,8 @@ O nosso projeto é um site dedicado a colecionadores e intusiastas de disco de v
 <li><a href="docs/05-Projeto-interface.md"> Projeto de interface</a></li>
 <li><a href="docs/06-Template-padrao.md"> Template padrão da aplicação</a></li>
 <li><a href="docs/07-Arquitetura-solucao.md"> Arquitetura da solução</a></li>
+<li><a href="docs/08-Plano-testes-software.md"> Plano de testes de software</a></li>
+<li><a href="docs/09-Registro-testes-software.md"> Registro de testes de software</a></li>
 <li><a href="docs/10-Referencias.md"> Referências</a></li>
 </ol>
 
