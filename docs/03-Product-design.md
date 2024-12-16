@@ -20,12 +20,17 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 ## Requisitos
 
-As tabelas a seguir apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade dos requisitos, aplique uma técnica de priorização e detalhe como essa técnica foi aplicada.
+As tabelas a seguir apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
 ### Requisitos funcionais
 
-- RF-01: O catálogo de discos será formado pelos usuários (colaborativo);
-- RF-02: O sistema deve possuir informativos relacionados a discos;
+| ID     | Descrição do Requisito                                   | Prioridade |
+| ------ | ---------------------------------------------------------- | ---------- |
+| RF-001 | O catálogo de discos será formado pelos usuários (colaborativo); | ALTA       |
+| RF-002 | O sistema deve possuir informativos relacionados a discos; | ALTA       |
+
+
+
 - RF-03: As coleções poderão ser classificadas quanto a estilo, gênero, ou categorias inseridas pelo usuário;
 - RF-04: O usuário pode consultar seu acervo de discos online e visualizar um disco que não possui caso esteja na dúvida se já possui ou não ao realizar buscas para adquirir um disco no qual deseja comprar;
 - RF-05: O site deve permitir arquivar informações relacionadas a sua coleção pessoal;
