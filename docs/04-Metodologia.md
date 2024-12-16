@@ -55,6 +55,12 @@ __*Implementação do Framework Scrum*__
 **Sprints**: Cada sprint começa com uma breve reunião em sala de aula todas as Terças-Feiras, onde o grupo define as tarefas a serem realizadas por cada membro e como está o andamento de cada sprint elaborada, essas reuniões diarias é feita para sincronizar o progresso do trabalho e ajustar os planos conforme a necessidade. A ideia central é garantir que todos estejam focados no projeto e para que possamos permanecer alinhados.
 
 
+
+![Kanban](https://github.com/user-attachments/assets/097f1a7b-35de-4d24-b38f-1360e269be9d)
+
+GitHub Projects: https://github.com/orgs/ICEI-PUC-Minas-PCO-ADS-TI/projects/25/views/5
+
+
 ### Ferramentas
 
 O projeto foi desenvolvido a partir de plataformas na qual foi solicitado que fosse elaborado toda a estrutura do projeto. A tabela a baixo possui o link dessas plataformas utilizadas.
@@ -65,6 +71,9 @@ O projeto foi desenvolvido a partir de plataformas na qual foi solicitado que fo
 | Repositório de código fonte         | GitHub                             | [Repositorio Discô](https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/pco-ads-2024-2-tiaw-disco/tree/main/src)  |
 | Documentos do projeto               | GitHub                             | [Documentação Discô](https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/pco-ads-2024-2-tiaw-disco/tree/main/docs) |
 |  |
-| Projeto de interface                | Figma                              | [Protótipo Interativo Discô](https://www.figma.com/proto/TaOnXLbU3ltnHC6QtmGmII/Disc%C3%B4?page-id=165%3A56&node-id=178-207&node-type=canvas&viewport=204%2C322%2C0.13&t=242NIbwpdxNrt5Mj-1&scaling=scale-down&content-scaling=fixed)   |
+| Projeto de interface                | Figma                              | [Protótipo Interativo Discô](https://www.figma.com/proto/TaOnXLbU3ltnHC6QtmGmII/Disc%C3%B4?page-id=165%3A56&node-id=178-207&node-type=canvas&viewport=204%2C322%2C0.13&t=242NIbwpdxNrt5Mj-![Kanban](https://github.com/user-attachments/assets/ee3f9382-8096-4df7-a07c-720de3b8deab)
+1&scaling=scale-down&content-scaling=fixed)   |
 | Hospedagem                          | Netlify                            | [Site Discô](https://discotechz.netlify.app/)      |
  
+
+
