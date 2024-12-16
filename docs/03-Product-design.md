@@ -64,10 +64,8 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
   
 
 ## Restrições
- |  ID    |   Descrição de Restrições                | Prioridade  |
- |------- |------------------------------------------|-------------|
- | RES-01 | Prazos de entrega do trabalho; | ALTA |
- | RES-02 | Qualidade do site; | ALTA |
- | RES-03 | Escopo e custo do projeto; | ALTA |
-
-
+ |  ID    |   Descrição de Restrições                | 
+ |------- |------------------------------------------|
+ | RES-01 | Prazos de entrega do trabalho; | 
+ | RES-02 | Qualidade do site; | 
+ | RES-03 | Escopo e custo do projeto; | 
